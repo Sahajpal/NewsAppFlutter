@@ -57,8 +57,10 @@ class _HomeState extends State<Home> {
                   itemCount: articles.length,
                   itemBuilder: (context, index) {
                     return NewsTile(
-                        name: articles[index].name,
-                        newsId: articles[index].news_id);
+                      name: articles[index].name,
+                      newsId: articles[index].news_id,
+                      url: articles[index].url,
+                    );
                   }),
             ),
     );
